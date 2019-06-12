@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang='es' xml:lang='es' xmlns='http://www.w3.org/1999/xhtml'>
+<meta charset='utf-8'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"3c1a7147c8","applicationID":"4113706","transactionName":"cgsPRRENCVpQRB1FVUUXTkILDRI=","queueTime":2,"applicationTime":58,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta content='NOODP' name='ROBOTS'>
+<meta content='initial-scale=1' name='viewport'>
+<link href="/assets/favicon-6f7f8e444792e14638c916c170832fb9.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<title>Adopta a Regal0 Cachorros Husky Siberiano Husky Siberiano en Madrid</title>
+<meta content="Adopta a Regal0 Cachorros Husky Siberiano Husky Siberiano en Madrid" name="description" />
+<link href="/assets/application-c5fba3dd55dd87bab77c834b22992dbe.css" media="all" rel="stylesheet" />
+<link href="/assets/social-likes_flat-e08e48dddac48c3828a7f6a1bd98a03b.css" media="screen" rel="stylesheet" />
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="h+DM0qrhN9RlfrKANGt+UULWgjs/SQJkO7vb8jZK60A=" name="csrf-token" />
+<body class='pets pets-show'>
+<header class='centered-navigation'>
+<div class='centered-navigation-wrapper'>
+<a class="mobile-logo" href="/"><img alt="Logo kiwoko blanco" src="/assets/logo_kiwoko_blanco-cc22e9cb8d1a2837849e24a47813acaf.png" /></a>
+<a class='centered-navigation-menu-button' href='javascript:void(0)'>MENÚ</a>
+<ul class='centered-navigation-menu'>
+<li class='nav-link logo'>
+<a class="logo" href="/"><img alt="Logo kiwoko blanco" src="/assets/logo_kiwoko_blanco-cc22e9cb8d1a2837849e24a47813acaf.png" /></a>
+</li>
+<li class='nav-link more'>
+<a href='javascript:void(0)'>Animales en adopción</a>
+<ul class='submenu'>
+<li><a href="/en-adopcion/perros">Perros en adopción</a></li>
+<li><a href="/en-adopcion/gatos">Gatos en adopción</a></li>
+<li><a href="/en-adopcion/roedores">Roedores en adopción</a></li>
+<li><a href="/pages/adoptar">¿Por qué adoptar?</a></li>
+<li><a href="/pets/new" rel="nofollow">Anunciar mascota</a></li>
+</ul>
+</li>
+<li class='nav-link'>
+<a href="/pages/ayudas-para-protectoras">Protectoras de animales</a>
+</li>
+<li class='nav-link'><a href="/users/sign_in" rel="nofollow">Acceso</a></li>
+</ul>
+</div>
+</header>
+
+
+<section>
+<div class='breadcrumb'>
+<div class="breadcrumb-child" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/en-adopcion/perros" itemprop="url"><span itemprop="title">Perros</span></a></div>
+<div class="breadcrumb-child" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/en-adopcion/perros/madrid" itemprop="url"><span itemprop="title">Madrid</span></a></div>
+<div class="breadcrumb-child" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/en-adopcion/perros/madrid/husky-siberiano" itemprop="url"><span itemprop="title">Husky Siberiano</span></a></div>
+</div>
+<div itemscope itemtype='http://schema.org/Article'>
+<div class='pet-box'>
+<div class='content'>
+<div class='content-header'>
+<div class='main-image'>
+<a href="http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/008/410/original/29.jpg"><img alt="29" itemprop="image" src="http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/008/410/show_main/29.jpg" /></a>
+</div>
+<div class='data'>
+<h4>
+Adoptado
+</h4>
+<h4>
+Urgente
+</h4>
+<h1 itemprop='name'>Regal0 Cachorros Husky Siberiano</h1>
+<p>
+Publicado hace
+<span content='2018-02-17 11:38:47 UTC' itemprop='datePublished'>más de 1 año</span>
+por amouraprotecta
+</p>
+</div>
+</div>
+<div class='images'>
+</div>
+<div itemprop='articleBody'><p>Regal0 Cachorros Husky Siberiano
+<br />Regalan Preciosos Cachorros Husky Siberiano.tienes Vacunados, desparasitados y con microchip. Amplías garantías sanitarias, ¡cinco años!. son macho y hembra Envío a toda España.</p></div>
+<div class='card-stats'>
+<ul>
+<li>
+<span>Raza</span>
+Husky siberiano
+</li>
+<li>
+<span>Sexo del perro</span>
+Macho
+</li>
+<li>
+<span>Lugar de la adopción</span>
+a
+</li>
+<li>
+<span>Provincia</span>
+Madrid
+</li>
+</ul>
+</div>
+
+<div class='adopt-buttons'>
+<div class='modal'>
+<label class="btn js-btn" for="modal-1">¡Quiero adoptarlo!</label>
+<input class="modal-state" id="modal-1" name="modal-1" type="checkbox" />
+<div class='modal-window'>
+<div class='modal-inner'>
+<label class='modal-close' for='modal-1'></label>
+<h1>
+¿Cómo adoptar a Regal0 Cachorros Husky Siberiano?
+</h1>
+<p>¡Muchas gracias por salvar a un animal!</p>
+<p>Ahora sólo tienes que ponerte en contacto con la persona que ha dado de alta a Regal0 Cachorros Husky Siberiano.</p>
+<form accept-charset="UTF-8" action="/en-adopcion/perros/madrid/husky-siberiano/7405-regal0-cachorros-husky-siberiano/adopt" class="simple_form new_adopt_message" id="new_adopt_message" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="h+DM0qrhN9RlfrKANGt+UULWgjs/SQJkO7vb8jZK60A=" /></div>
+<div class='form-inputs'>
+<div class="input email required adopt_message_email"><label class="email required control-label" for="adopt_message_email"><abbr title="obligatorio">*</abbr> E-mail</label><input class="string email required" id="adopt_message_email" name="adopt_message[email]" type="email" /></div>
+<div class="input text required adopt_message_body"><label class="text required control-label" for="adopt_message_body"><abbr title="obligatorio">*</abbr> Mensaje</label><textarea class="text required" id="adopt_message_body" name="adopt_message[body]" rows="5">
+</textarea></div>
+</div>
+<div class='form-actions'>
+<input class="btn" name="commit" type="submit" value="Enviar Mensaje" />
+</div>
+</form>
+
+
+
+</div>
+</div>
+</div>
+
+<div class='social-likes' data-title='Ayúdanos a adoptar a Regal0 Cachorros Husky Siberiano' data-url='http://www.kiwokoadopta.org/en-adopcion/perros/madrid/husky-siberiano/7405-regal0-cachorros-husky-siberiano'>
+<h6>Quiero ayudar a que otros lo adopten</h6>
+<br>
+<div class='facebook' title='Comparte el enlace en Facebook'>Facebook</div>
+<div class='twitter' data-via='barkibu' title='Comparte el enlace en Twitter'>Twitter</div>
+<div class='plusone' title='Comparte el enlace en Google+'>Google+</div>
+<div class='pinterest' data-media='http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/008/410/original/29.jpg' title='Comparte la imagen en Pinterest'>Pinterest</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class='line-behind-text'>
+<h6 class='er_toc_tag' id='er-toc-id-9'>
+Otros  en adopción en Madrid
+</h6>
+</div>
+<div class='cards'>
+<a class="card" href="/en-adopcion/perros/madrid/mestizo/12126-oso" itemprop="url" itemscope="itemscope" itemtype="http://schema.org/Article"><div class='card-image'>
+<img alt="Uploads 2fd250e5f2 fcce 4873 9ec0 38bf0020d43a 2fososcaritab" itemprop="image" src="http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/021/540/home/uploads_2Fd250e5f2-fcce-4873-9ec0-38bf0020d43a_2FOSOSCARITAB.jpg" />
+</div>
+<div class='card-header' itemprop='name'>
+OSO
+</div>
+<div class='card-copy'><p>Buscamos adopción para OSO, un perrito de dos meses y medio (14 de marzo de 2019). Su mamá es una bodeguera de 8 kgs aproximadamente, y al papá no le conocemos. Creemos que puede tener tamaño mediano. ¿Te animas a abrirle tu...</p></div>
+<div class='card-stats'>
+<ul>
+<li>
+<span>Raza</span>
+Mestizo
+</li>
+<li>
+<span>Sexo del perro</span>
+Macho
+</li>
+<li>
+<span>Tamaño</span>
+Mediano
+</li>
+<li>
+<span>Lugar de la adopción</span>
+Madrid
+</li>
+</ul>
+</div>
+
+</a><a class="card" href="/en-adopcion/perros/madrid/mestizo/12125-max" itemprop="url" itemscope="itemscope" itemtype="http://schema.org/Article"><div class='card-image'>
+<img alt="Uploads 2f15a1e576 f3c2 4d44 a3b3 2737e7c81700 2fportada web" itemprop="image" src="http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/021/537/home/uploads_2F15a1e576-f3c2-4d44-a3b3-2737e7c81700_2FPORTADA_WEB.png" />
+</div>
+<div class='card-header' itemprop='name'>
+MAX
+</div>
+<div class='card-copy'><p>MAX es un maravilloso mestizo, nacido en Junio de 2011, recogido de una reala. Necesita una familia que le de mucha seguridad y  cariño. Si le das la oportunidad de conocerte, tendrás el perro más fiel, noble y cariñoso que...</p></div>
+<div class='card-stats'>
+<ul>
+<li>
+<span>Raza</span>
+Mestizo
+</li>
+<li>
+<span>Edad</span>
+Adulto
+</li>
+<li>
+<span>Sexo del perro</span>
+Macho
+</li>
+<li>
+<span>Tamaño</span>
+Mediano
+</li>
+<li>
+<span>Lugar de la adopción</span>
+Madrid
+</li>
+</ul>
+</div>
+
+</a><a class="card" href="/en-adopcion/perros/madrid/boxer/12124-dana" itemprop="url" itemscope="itemscope" itemtype="http://schema.org/Article"><div class='card-image'>
+<img alt="Uploads 2f4d57fab6 d660 4721 936a 245e0a588886 2fportada web" itemprop="image" src="http://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/021/534/home/uploads_2F4d57fab6-d660-4721-936a-245e0a588886_2FPORTADA_WEB.png" />
+</div>
+<div class='card-header' itemprop='name'>
+DANA
+</div>
+<div class='card-copy'><p>DANA: ésta preciosa bóxer de poco más de 3 añitos, nacida en Septiembre de 2015, ha tenido doblemente mala suerte en su vida. Con menos de un año la dejaron abandonada en la perrera, de donde la sacamos nosotros a los pocos...</p></div>
+<div class='card-stats'>
+<ul>
+<li>
+<span>Raza</span>
+Boxer
+</li>
+<li>
+<span>Sexo del perro</span>
+Hembra
+</li>
+<li>
+<span>Tamaño</span>
+Mediano
+</li>
+<li>
+<span>Lugar de la adopción</span>
+Madrid
+</li>
+</ul>
+</div>
+
+</a>
+</div>
+<a href="/en-adopcion/perros/madrid">Ver más  en Madrid</a>
+</section>
+
+<footer class='footer'>
+<div class='footer-links'>
+<ul>
+<li>
+<h3>Sobre Kiwokoadopta</h3>
+</li>
+<li>
+<a href="/pets/new" rel="nofollow">Anunciar mascota</a>
+</li>
+<li>
+<a href="/contact" rel="nofollow">Contactar</a>
+</li>
+<li>
+<a href="/pages/ayudas-para-protectoras">Ayudas para protectoras</a>
+</li>
+</ul>
+<ul>
+<li>
+<h3>Sobre Barkibu</h3>
+</li>
+<li>
+<a href="http://www.barkibu.com/?utm_source=kiwokoadopta.org&amp;utm_medium=referral&amp;utm_campaign=universal" target="_blank" title="Consulta un veterinario online las 24 horas">Veterinario online</a>
+</li>
+<li>
+<a href="http://www.facebook.com/barkibu" target="_blank" title="Barkibu en Facebook">Facebook</a>
+</li>
+<li>
+<a href="http://twitter.com/barkibu" target="_blank" title="Barkibu en Twitter">Twitter</a>
+</li>
+</ul>
+<ul>
+<li>
+<h3>Sobre Kiwoko</h3>
+</li>
+<li>
+<a href="https://www.kiwoko.com/centros-de-adopcion.html?utm_source=kiwokoadopta.org&amp;utm_medium=referral&amp;utm_campaign=universal" target="_blank" title="Todo lo que tu mascota necesita">Kiwoko Mundo Animal</a>
+</li>
+<li>
+<a href="http://www.facebook.com/kiwoko" target="_blank" title="Kiwoko en Facebook">Facebook</a>
+</li>
+<li>
+<a href="http://twitter.com/kiwoko" target="_blank" title="Kiwoko en Twitter">Twitter</a>
+</li>
+</ul>
+</div>
+<hr>
+<p>
+Kiwokoadopta.org es una iniciativa sin ánimo de lucro de Barkibu y Kiwoko
+</p>
+</footer>
+
+<script src="/assets/application-33d7d62ac17cb22c89ce566122e2746e.js"></script>
+<script src="/assets/social-likes.min-2a1d8a17cdd0231b46a1da2bd0101bc9.js"></script>
+<script>
+  $(document).ready(function(){
+  	$(".main-image a, .images a").magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  });
+</script>
+
+<script>
+  window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+  window.analytics.load("ug1t3qrryb");
+  window.analytics.page();
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQJ7J5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQJ7J5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+html,body{
+    padding: 0px;/*alinear en texto uqe se encuentra en body al borde izquierdo de la pantalla*/
+    margin: 0px;/*elimina la margen del contenido*/
+    font-size: 20px;
+    font-family: Arial  ;
+    color: black;
+}
+nav{
+    display:flex;/*pasa los elementos de vertical a horizontal*/
+    background-color: green;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+nav li{
+    padding-left: 20px;
+    list-style:none;
+}
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+/*---------Main section*/
+.main_section{
+    padding: 20%;
+    text-align: center;
+    font-family: lucida Bright;
+    margin-top: -150px;
+    
+}
+/*--fin main,section*/
+
+/*--inicio productos*/
+
+.Productos{
+    background-image: url("../images/cama-gato-diseno-madera.jpg");
+    height : 200px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+    text-align: center;
+    margin-top: -200px;
+}
+.Products .contents{
+    background-color: rgba(255, 255, 0, 0.699);
+    padding: 20px;
+    box-shadow: 0 0 2px black;
+}
+.Products{
+    padding: 20px;
+    
+}
+.main_btn{
+    padding: 10px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    color: royalblue;
+}
+.main_btn:hover{
+    background-color: aquamarine;
+}
+.imag_p{
+    text-align: center;
+}
+/*--fin producto*--/
+
+/*--inicio Beneficios*/
+.Beneficios {
+    background-image: url("../images/gatos-de-interior.jpg");
+    display: flex;
+    height: 350px;
+    background-size: cover;
+    text-align: center;
+    padding: 8%;
+    background-position: center top;
+    }
+.Beneficio .cont_ben{
+    text-align: center;
+    padding: 20px;
+    
+}
+.Beneficio{
+    padding: 10px;
+    margin-top: -30px;   
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0 0 50px black;
+   
+}
+/*--fin beneficios*/
+
+/*-- inicio recomendaciones*/
+.recomendacion{
+    box-shadow: 0 0 10px black;
+    border-radius: 40px;
+    margin-top: 30px;
+    
+}
+.recomendaciones{
+    display: flex;
+    background-image: url("../images/espacio.jpg");
+    text-align: center;
+    color: yellow;
+}
+.recomendaciones.contenedora{
+    text-align: center top;
+    padding: 20px;
+}
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+/*---------------venta----------*/
+.Modulo_pago{
+    background-color: white;
+    box-shadow: 0 0 2px;
+    padding: 10px;
+}
+.modulo_pago_images{
+    max-width: 150%;
+    text-align: center;
+}
+.data{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;/*hace que los elementos respeten el mar*/
+}
+label{
+    font-size: 20px; /*da el tamaño de label*/
+}
+.Modulo_pago .main_btn{
+    margin-top: 10px;
+}
